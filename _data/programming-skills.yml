@@ -1,11 +1,27 @@
-- name: HTML5/CSS3
+- name: Python
   percentage: 90
   color: danger
 
-- name: Go
-  percentage: 80
-  color:
+- name: TensorFlow
+  percentage: 95
+  color: danger
 
-- name: Python
+  - name: NumPy
+  percentage: 90
+  color: danger
+
+  - name: JavaScript
+  percentage: 80
+  color: secondary
+
+  - name: React
+  percentage: 80
+  color: secondary
+
+
+  - name: Java
   percentage: 70
   color: secondary
+
+
+
