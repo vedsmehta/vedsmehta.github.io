@@ -6,20 +6,20 @@
   percentage: 95
   color: danger
 
-  - name: NumPy
+- name: NumPy
   percentage: 90
   color: danger
 
-  - name: JavaScript
+- name: JavaScript
   percentage: 80
   color: secondary
 
-  - name: React
+ - name: React
   percentage: 80
   color: secondary
 
 
-  - name: Java
+- name: Java
   percentage: 70
   color: secondary
 
