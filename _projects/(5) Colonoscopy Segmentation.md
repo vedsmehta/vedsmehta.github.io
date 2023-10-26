@@ -1,6 +1,6 @@
 ---
 name: Colonoscopy Research
-tools: [Ignore me]
+tools: [TensorFlow, Python, OpenCV, PIL]
 image: https://i.imgur.com/91WKbGY.png
 description: An 8 month academic research project that efficiently aids the diagnosis of colorectal cancer.
 ---
