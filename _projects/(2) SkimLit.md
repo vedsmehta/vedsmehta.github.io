@@ -22,7 +22,7 @@ SkimLit, short for skim literature, is a project I made in the summer of my 7th 
 This was achieved by using a tribrid model that used the line numbers, total lines, sentences, and characters of each abstract and pass them through a neural network with 3 layers of embedding, allowing for highly complex text-based representations to be learned.
 
 Here is a picture of what this looks like:
-![Alt text](skmodel.png)
+![Alt text](https://i.imgur.com/zk0M9iD.png)
 
 ## Tensorflow Code (functional API):
 
