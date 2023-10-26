@@ -1,7 +1,7 @@
 ---
 name: SkimLit
 tools: [Python, TensorFlow, Pandas]
-image: skmodel.png
+image: https://i.imgur.com/zk0M9iD.png
 description: Classifies sentences of medical abstracts, making research more understandable and accessible.
 ---
 
