@@ -1,190 +1,132 @@
 ---
-name: PyTuner
-tools: [Python, Tkinter, NumPy, Sounddevice]
+name: Assisting Emotional Regulation of Patients with Neurological Disorders
+tools: [Python, TensorFlow, NumPy, Matplotlib, MNE]
 image: https://i.imgur.com/Q6bznjN.png
-description: PyTuner is a MacOS-based guitar tuning application coded fully in Python. Being my first project, I learned alot about software development and proper coding practices.
+description: This project was my second scientific research project, in which I used various data processing techniques and artificial intelligence methods to help people impacted by neurological disorders manage their emotions; a major symptom associated with any disorder.
 ---
-# The PyTuner Project
+# Brain-Computer Interfaces for Emotional Regulation of People with Neurological Disorders
 
-PyTuner was my first serious programming project, which I made for submission to a local technology competition. Through this project I learned alot about Graphical User Interaces (GUIs) and complex data structures within desktop applications. I used fast fourier transforms and other calculus principles to transform audio from a raw guitar pluck to a message that tells the user whether or not their string is out of tune.
+In this project, I pushed my limits and explored my ability to use AI for social good. Having become a theme in my previous projects, I decided to carry forward the use of medical imaging in my work. This project has a personal value for me, as my cousin is diagnosed with autism. Every time I see her I try to think of ways I can help her with my skills, which is how I arrived upon the development of this system. Using machine learning and data processing, I developed an algorithm which not only predicts the emotion of a patient, but also simulates the neural conditions of patients with neurological disorders: a key component of training my machine learning model and rendering this project successful.
 
-![PyTuner](https://i.imgur.com/Q6bznjN.png)
+![BCI](https://i.imgur.com/Q6bznjN.png) 
+<!-- TODO -->
 
-## YIN Algorithm
+I used open data from a website called OpenNeuro, which provides neurological datasets for free. The dataset had 40 recordings from the scalps of regular people during an exposure to various emotional stimuli. The devices used to create the recordings are called Electroencephalograms, or EEGs: a noninvasive method to capturing neural time series.
 
-The YIN algorithm converts waveform-based audio to a signular pitch, which is the entire goal of a guitar tuner.
+## Neurological Disorder Simulation Algorithm
 
-I used `sounddevice` to record audio and `numpy` to perform computations.
+This algorithm was developed after I conducted heavy research into what differentiates the neural signals of patients with and without neurological disorders. The main differentiator is derived from the complexity, and is a metric known as multiscale entropy. This metric allows one to measure the complexity of a neural time series over various different timescales. Multiscale Entropy is significantly higher in patients with neurological disorders than those without. I figured out that adding random noise which models a gaussian distribution to every single timestep in a neural timeseries increases the multiscale entropy by a significant amount.
+
+I used `NumPy` arrays and `TensorFlow` mathematical functions to develop this algorithm
 
 The python code for the algorithm is as follows:
 ```python
-def YIN(sig, sr, wl=882, ws=441, f0_min=50,
-        f0_max=500, ht=0.1):
-    """
+class SimulateNeurologicalComplexity(tf.keras.layers.Layer):
+    def __init__(self, complexity_factor=0.2, **kwargs):
+        super(SimulateNeurologicalComplexity, self).__init__(**kwargs)
+        self.complexity_factor = complexity_factor
 
-    Implement the YIN algorithm. Notice how 
-    differenceFunction, cummalative_mean_norm_df, and pitch
-    are all helper functions for this tool.
+    def build(self, input_shape):
+        super(SimulateEEGComplexity, self).build(input_shape)
 
-    Parameters:
-    --------------
-    sig iterable:
-        numpy array of audio
-    sr int:
-        samplerate
-    wl=882 int:
-        length of calculation window for pitch
-    ws=441 int:
-        step for calculation window
-    f0_min=50 int:
-        minimum frequency threshold
-    f0_max=500 int:
-        maximum frequency threshold
-    ht=0.1 float:
-        harmonic threshold
+    def call(self, inputs):
+        original_eeg_data = inputs
+        
+        # Simulate complexity across all channels
+        simulated_neural_data = tf.identity(original_eeg_data)
+        
+        # Apply complexity to the EEG data
+        complexity = tf.math.reduce_std(simulated_neural_data) * self.complexity_factor
+        noise = tf.random.normal(tf.shape(simulated_neural_data), mean=0, stddev=1)
+        simulated_neural_data *= (noise)
+        
+        return simulated_neural_data
 
-    """
-
-    t_min = int(sr / f0_max)
-    t_max = int(sr / f0_min)
-
-    timeScale = range(0, len(sig) - wl, ws)
-    times = [t/float(sr) for t in timeScale]
-    frames = [sig[t:t + wl] for t in timeScale]
-
-    pitches = [0.0] * len(timeScale)
-    harmonic_rates = [0.0] * len(timeScale)
-    argmins = [0.0] * len(timeScale)
-
-    for i, frame in enumerate(frames):
-
-        # Compute YIN
-        df = differenceFunction(frame, wl, t_max)
-        CMNDF = cummalative_mean_norm_df(df, wl)
-        p = pitch(CMNDF, t_min, t_max, ht)
-
-        # Get results
-        if np.argmin(CMNDF) > t_min:
-            argmins[i] = float(sr / np.argmin(CMNDF))
-        if p != 0:  # A pitch was found
-            pitches[i] = float(sr / p)
-            harmonic_rates[i] = CMNDF[p]
-        else:
-            harmonic_rates[i] = min(CMNDF)
-
-    return pitches, harmonic_rates, argmins, times
+    def get_config(self):
+        config = super(SimulateEEGComplexity, self).get_config()
+        config.update({"complexity_factor": self.complexity_factor})
+        return config    
 ```
 
-## Graphical User Interface
+## Deep Convolutional Neural Network
 
-For the graphical user interface, I used a library called `Tkinter`, a simple python library for GUI development. Here is a sample of Tkinter code for a simple dropdown, implemented using object-oriented programming (OOP):
+For the machine learning algorithm, I turned to deep learning, specifically Deep Convolutional Neural Networks to analyze energy diagrams of patient recordings. I transformed the data into a power spectral density chart for each recording, which is a representation of each wavelength and the extent to which it occurs. Doing this for all recording channels on the EEG led to a 128 by 128 image representation of a person going through an emotion. The data had 18 different emotion groups associated with it which I first split into two groups: `["Positive", "Negative"]`. A deep convolutional neural network would classify images into these two groups and then further classify them into one of the 18 emotion categories. To build this Deep Convolutional Neural Network, I relied on `keras`, the high-level API within the TensorFlow library which allows one to build powerful and customizable neural networks.
 
 ```python
-import tkinter as tk
-from tkinter import ttk
+class EEGModel(tf.keras.Model):
+    def residual_block(self, x, filters, downsample=False):
+        """A residual block.
 
+        Args:
+            x: The input tensor.
+            filters: The number of filters in the convolutional layers.
+            downsample: Whether to downsample the input.
 
-
-class LabelDropdown(tk.Frame):
-    """
-    Dropdown - like object which projects a multiline string to GUI
-    see LabelDropdown.__init__ for more details.
-    """
-
-
-    def __init__(self, master, label, buttonlabel, label_font, label_fg, label_bg,
-                 buttonlabel_font, buttonlabel_fg, buttonlabel_bg, indent='  '):
-        """__init__.
-
-        Parameters
-        ----------
-        master : tk.Tk
-            master
-        label : str
-            label
-        buttonlabel : str
-            label for button
-        label_font : str
-            font for button
-        label_fg : str
-            forground for button
-        label_bg : str
-            background for button
-        buttonlabel_font : str
-            font for button
-        buttonlabel_fg : str
-            foreground for button
-        buttonlabel_bg : str
-            background for button
-        indent : str
-            indentation for label
+        Returns:
+            The output tensor.
         """
-        super(LabelDropdown, self).__init__()
-        self['background'] = '#ffffff'
-        self.label = label
-        self.buttonlabel = buttonlabel
-        self.label_font = label_font
-        self.label_fg = label_fg
-        self.label_bg = label_bg
-        self.buttonlabel_font = buttonlabel_font
-        self.buttonlabel_fg = buttonlabel_fg
-        self.buttonlabel_bg = buttonlabel_bg
-        self.indent = indent
-        self.button = ttk.Button(self, text=self.buttonlabel+' ▶', style='DD.TButton', command=self.show)
-        self.button.grid(row=0, column=0)
-        self.style_init()
-    def show(self):
-        """
-        Show Label
-        """
-        self.button['command'] = self.hide
-        self.button['text'] = self.buttonlabel + ' ▼'
-        self.label_list = self.label.split('\n')
-        self.label_widgets = []
-        if len(self.label_widgets) == 0:
-            for i in range(len(self.label_list)):
-                self.label_list[i] = self.indent+self.label_list[i] # notice that indent.join(label_list) would leave out the first line.
-                self.label_widgets.append(ttk.Label(self, text=self.label_list[i], style='DD.TLabel'))
-                self.label_widgets[i].grid(row=i+1, column=0)
+
+        y = tf.keras.layers.Conv2D(filters, (3, 3), strides=(1 if not downsample else 2), padding='same')(x)
+        y = tf.keras.layers.BatchNormalization()(y)
+        y = tf.keras.layers.Activation('relu')(y)
+
+        y = tf.keras.layers.Conv2D(filters, (3, 3), strides=(1, 1), padding='same')(y)
+        y = tf.keras.layers.BatchNormalization()(y)
+
+        if downsample:
+            shortcut = tf.keras.layers.Conv2D(filters, (1, 1), strides=(2, 2), padding='same')(x)
+            shortcut = tf.keras.layers.BatchNormalization()(shortcut)
         else:
-            for i in range(len(self.label_widgets)):
-                self.label_widgets[i].grid(row=i+1,column=0)
-    def hide(self):
-        """
-        Hide Docstring
-        """
-        self.button['command'] = self.show
-        self.button['text'] = self.buttonlabel + ' ▶'
-        for i in self.label_widgets:
-            i.grid_forget()
-    def style_init(self):
-        """
-        initialize styles
-        """
-        self.style = ttk.Style(self)
-        self.style.configure('DD.TLabel',
-                             font=self.buttonlabel_font,
-                             foreground=self.buttonlabel_fg,
-                             background=self.buttonlabel_bg,
-                             relief='flat', pady=10)
-        self.style.configure('DD.TButton',
-                             font=self.buttonlabel_font,
-                             foreground=self.buttonlabel_fg,
-                             background=self.buttonlabel_bg,
-                             relief='flat')
-        self.style.map('DD.TButton',
-                       foreground=[('active', '#000000')],
-                       background=[('active', '#ffffff')])
-        self.style.layout('DD.TButton',
-                          [('Button.button',
-                            {'sticky': 'nswe', 'children': 
-                                #[('Button.padding', {'sticky': 'nswe', 'children': 
-                                    [('Button.label', {'sticky': 'nswe'})]
-                                   # })]
-                                })]
-                          )
-```
+            shortcut = x
 
-<p class="text-center">
-{% include elements/button.html link="https://github.com/vedsmehta/pytuner" text="See the code!" %}
-</p>
+        output = tf.keras.layers.add([y, shortcut])
+        output = tf.keras.layers.Activation('relu')(output)
+
+        return output
+    def base_model(self, inputs):
+        x = tf.keras.layers.Conv2D(64, (7, 7), strides=(2, 2), padding='same')(inputs)
+        x = tf.keras.layers.BatchNormalization()(x)
+        x = tf.keras.layers.Activation('relu')(x)
+        x = tf.keras.layers.MaxPooling2D((3, 3), strides=(2, 2))(x)
+
+        # Residual blocks
+        for i in range(3):
+            x = residual_block(x, 64)
+
+        for i in range(4):
+            x = residual_block(x, 128, downsample=True if i == 0 else False)
+
+        for i in range(6):
+            x = residual_block(x, 256, downsample=True if i == 0 else False)
+
+        for i in range(3):
+            x = residual_block(x, 512, downsample=True if i == 0 else False)
+        return x
+    def __init__(self, binary_model=None):
+        super(EEGModel, self).__init__()
+        self.eeg_comp = SimulateEEGComplexity()
+        self.pooling = layers.Flatten()
+        self.bin_output = layers.Dense(1, activation='sigmoid')
+
+        self.catatt = layers.Dense(256, activation="relu")
+        self.flat = layers.Flatten()
+        self.add_2 = layers.Dense(256, activation="relu")
+        self.add = layers.Add()
+        self.cat_output = layers.Dense(1, activation="sigmoid")
+    def call(self, inputs, training=None, mask=None):
+        # Binary Classification
+        x = self.eeg_comp(inputs)
+        x = base_model(x)
+        pool = self.pooling(x)
+        binary_predictions  = self.bin_output(pool)
+        # not so binary classification
+        # x = self.gru_1(inputs)
+        # x = self.gru_2(x)
+        # x = layers.BatchNormalization()(x)
+        x_1 = self.catatt(pool)
+        x_2 = self.add_2(binary_predictions)
+        x = self.add([x_1, x_2])
+        subclass_predictions = self.cat_output(x)
+
+        return binary_predictions, subclass_predictions
+```
