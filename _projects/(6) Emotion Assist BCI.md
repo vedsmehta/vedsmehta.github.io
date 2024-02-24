@@ -8,7 +8,7 @@ description: This project was my second scientific research project, in which I 
 
 In this project, I pushed my limits and explored my ability to use AI for social good. Having become a theme in my previous projects, I decided to carry forward the use of medical imaging in my work. This project has a personal value for me, as my cousin is diagnosed with autism. Every time I see her I try to think of ways I can help her with my skills, which is how I arrived upon the development of this system. Using machine learning and data processing, I developed an algorithm which not only predicts the emotion of a patient, but also simulates the neural conditions of patients with neurological disorders: a key component of training my machine learning model and rendering this project successful.
 
-![BCI](https://i.imgur.com/Q6bznjN.png))
+![BCI](https://i.imgur.com/Q6bznjN.png)
 <!-- TODO -->
 
 I used open data from a website called OpenNeuro, which provides neurological datasets for free. The dataset had 40 recordings from the scalps of regular people during an exposure to various emotional stimuli. The devices used to create the recordings are called Electroencephalograms, or EEGs: a noninvasive method to capturing neural time series.
