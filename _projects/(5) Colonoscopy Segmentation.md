@@ -22,7 +22,7 @@ Here is the abstract:
 
 
 Here is a code snippet from one of my successful model architectures, a UNet with an EfficientNetB4 encoder:
-```
+```python
 from efficientnet import EfficientNetB4
 
 def UEfficientNet(input_shape=(None, None, 3),dropout_rate=0.1):
