@@ -2,7 +2,7 @@
 title: code for change. with vedant.
 description: >-
                       i like training deep neural networks
-                      for societal good. and sometimes i even
+                      to solve problems. and sometimes i even
                       make websites.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : vedsmehta/vedsmehta.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -29,11 +29,11 @@ author:
   image             : https://i.ibb.co/93d22TXj/IMG-4352-2.jpg
 #  behance           : your_username
 # dribbble          : your_username
-  email             : veds.mehta@gmail.com
+  email            : veds.mehta@gmail.com
 #  facebook          : your_username
   github            : vedsmehta
 # gitlab            : your_username
- instagram         : @vedsmehta
+  instagram         : @vedsmehta
 # kaggle            : your_username
 #  linkedin          : your_username
 #  medium            : your_username
