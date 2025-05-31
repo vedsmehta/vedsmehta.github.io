@@ -1,7 +1,8 @@
 ---
-name: Assisting Emotional Regulation of Patients with Neurological Disorders
-tools: [Python, TensorFlow, NumPy, Matplotlib, MNE]
-image: https://i.imgur.com/RWd7KHs.png
-description: This project was my second scientific research project, in which I used various data processing techniques and artificial intelligence methods to help people impacted by neurological disorders manage their emotions; a major symptom associated with any disorder.
+name: Optimizing Microneedle Geometry with Physics-Informed Machine Learning
+tools: [Python, PyTorch, MATLAB, Matplotlib, Lightning]
+image: https://i.imgur.com/GJTM8cZ.png
+description: Under the mentorship of Postdoctoral Researcher Dr. Pankaj Rohilla, I carried out a project involving Physics-Informed Neural Networks
 ---
-# Brain-Computer Interfaces for Emotional Regulation of People with Neurological Disorders
+# Physics-Informed Neural Networks
+
