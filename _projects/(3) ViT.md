@@ -10,7 +10,7 @@ description: My TensorFlow recreation of groundbreaking research that has revolu
 
 The vision transformer is one of the latest computer vision models produced by the Google Brain Research team. On almost all benchmarks, the ViT outperformed its predecessors in accuracy, and showed massive promise to researchers around the world. However, the code was written using PyTorch as the backing machine learning library and TensorFlow did not have an official implementation. Although I cannot create an official implementation, I decided to replicate ideas from the research paper into TensorFlow code.
 
-I essentially translated this holy grail of computer vision:
+I worked to translate this paper:
 <object data="https://arxiv.org/pdf/2010.11929.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://arxiv.org/pdf/2010.11929.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://arxiv.org/pdf/2010.11929.pdf">Download PDF</a>.</p>

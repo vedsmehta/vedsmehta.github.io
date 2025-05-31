@@ -6,7 +6,7 @@ description: PyTuner is a MacOS-based guitar tuning application coded fully in P
 ---
 # The PyTuner Project
 
-PyTuner was my first serious programming project, which I made for submission to a local technology competition. Through this project I learned alot about Graphical User Interaces (GUIs) and complex data structures within desktop applications. I used fast fourier transforms and other calculus principles to transform audio from a raw guitar pluck to a message that tells the user whether or not their string is out of tune.
+PyTuner was my first serious programming project, which I made for submission to a local technology competition. Through this project I learned alot about Graphical User Interaces (GUIs) and complex data structures within desktop applications. I used fast fourier transforms and linear algebra to transform audio from a raw guitar pluck to a message that tells the user whether or not their string is out of tune.
 
 ![PyTuner](https://i.imgur.com/Q6bznjN.png)
 

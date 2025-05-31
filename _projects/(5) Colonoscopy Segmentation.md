@@ -7,7 +7,7 @@ description: An 8 month academic research project that efficiently aids the diag
 
 # Colonoscopy Research
 
-At the pinnacle of my computer science journey so far, an academic research project I did in my 9th grade year stands strong. Titled "Towards Real-time Polyp Segmentation during Colonoscopy using an EfficientNet-based UNet Architecture", this project aims to aid doctors around the world in diagnosing colorectal cancer, and other Gastrointestinal diseases.
+I did my first scientific research project in my 9th grade year. Titled "Towards Real-time Polyp Segmentation during Colonoscopy using an EfficientNet-based UNet Architecture", this project aims to aid doctors around the world in diagnosing colorectal cancer, and other Gastrointestinal diseases.
 
 Here is the abstract:
 
@@ -94,9 +94,11 @@ def UEfficientNet(input_shape=(None, None, 3),dropout_rate=0.1):
     output_layer = Conv2D(1, (1,1), padding="same", activation="sigmoid")(uconv0)    
     
     model = Model(input, output_layer)
-    model.name = 'u-xception'
+    model.name = 'u-efficientnet'
 
     return model
   ```
 
-This project has allowed me to showcase my skills at a conference in MIT, and an IEEE conference in December.
+I presented this work at an MIT research conference, and later at the IEEE BIBE 2023 conference.
+
+{% include elements/button.html link="https://ieeexplore.ieee.org/document/10431892" text="See the paper!" %}
