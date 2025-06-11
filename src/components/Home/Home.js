@@ -16,13 +16,13 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  ✌️
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                I AM
+                <strong className="main-name"> VEDANT MEHTA</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
