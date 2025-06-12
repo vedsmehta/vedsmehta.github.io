@@ -27,3 +27,6 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+
+# Personal files
+src/Assets/Vedant\ Mehta\ 2_24_25\ copy.pdf
