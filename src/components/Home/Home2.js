@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -19,7 +18,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m Vedant Mehta — a high school researcher, startup founder, and data scientist.
+              I'm Vedant Mehta — a high school researcher, startup founder, and data scientist.
               <br />
               <br />I work at the intersection of{" "}
               <b className="purple">machine learning</b>,{" "}
@@ -36,7 +35,7 @@ function Home2() {
               .
               <br />
               <br />
-              You’ll often find me developing open-source tools, teaching AI
+              You'll often find me developing open-source tools, teaching AI
               literacy, or leading initiatives to make tech more accessible.
             </p>
           </Col>
