@@ -15,21 +15,21 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
               I'm Vedant Mehta — a high school researcher, startup founder, and data scientist.
               <br />
               <br />I work at the intersection of{" "}
-              <b className="purple">machine learning</b>,{" "}
-              <b className="purple">healthcare innovation</b>, and{" "}
-              <b className="purple">AI ethics</b>. From designing EEG diagnostic systems to modeling fluid dynamics with neural nets, I build for
+              <b className="blue">machine learning</b>,{" "}
+              <b className="blue">healthcare innovation</b>, and{" "}
+              <b className="blue">AI ethics</b>. From designing EEG diagnostic systems to modeling fluid dynamics with neural nets, I build for
               impact.
               <br />
               <br />
               I’m currently dual-enrolled at Georgia Tech, where I dive deep
               into{" "}
-              <b className="purple">
+              <b className="blue">
                 linear algebra, multivariable calculus, and differential equations
               </b>
               .
@@ -49,7 +49,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="blue">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
