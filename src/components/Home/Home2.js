@@ -22,8 +22,8 @@ function Home2() {
               <br />
               <br />I work at the intersection of{" "}
               <b className="blue">machine learning</b>,{" "}
-              <b className="blue">healthcare innovation</b>, and{" "}
-              <b className="blue">AI ethics</b>. From designing EEG diagnostic systems to modeling fluid dynamics with neural nets, I build for
+              <b className="blue">social good</b>, and{" "}
+              <b className="blue">ethics</b>. From designing EEG diagnostic systems to modeling fluid dynamics with neural nets, I build for
               impact.
               <br />
               <br />
