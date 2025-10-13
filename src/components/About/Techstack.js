@@ -2,67 +2,96 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
   DiPython,
-  DiGit,
+  DiJavascript1,
   DiJava,
+  DiReact,
+  DiGit,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
+  SiPytorch,
+  SiTensorflow,
+  SiNumpy,
+  SiPandas,
+  SiMatplotlib,
+  SiScikitlearn,
+  SiOpencv,
+  SiStreamlit,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiFirebase,
+  SiR,
+  SiMatlab,
+  SiPlotly,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Core Languages */}
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <CgCPlusPlus />
       </Col>
+
+      {/* Data Science & Research */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNumpy />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPandas />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMatplotlib />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPlotly />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiScikitlearn />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPytorch />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTensorflow />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiOpencv />
+      </Col>
+
+      {/* Visualization / App Dev */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiStreamlit />
+      </Col>
+
+      {/* Scientific & Statistical */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMatlab />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiR />
+      </Col>
+
+      {/* Web / Infra */}
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <DiGit />
       </Col>
     </Row>
   );
