@@ -15,29 +15,32 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="blue"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I'm Vedant Mehta — a high school researcher, startup founder, and data scientist.
-              <br />
-              <br />I work at the intersection of{" "}
-              <b className="blue">machine learning</b>,{" "}
-              <b className="blue">social good</b>, and{" "}
-              <b className="blue">ethics</b>. From designing EEG diagnostic systems to modeling fluid dynamics with neural nets, I build for
-              impact.
-              <br />
-              <br />
-              I’m currently dual-enrolled at Georgia Tech, where I dive deep
-              into{" "}
-              <b className="blue">
-                linear algebra, multivariable calculus, and differential equations
-              </b>
-              .
-              <br />
-              <br />
-              You'll often find me developing open-source tools, teaching AI
-              literacy, or leading initiatives to make tech more accessible.
-            </p>
+  LET ME <span className="blue">INTRODUCE</span> MYSELF
+</h1>
+<p className="home-about-body">
+  I'm Vedant Mehta — a high school researcher, inventor, and entrepreneur.
+  <br />
+  <br />
+  I work at the intersection of{" "}
+  <b className="blue">AI</b>,{" "}
+  <b className="blue">engineering</b>, and{" "}
+  <b className="blue">human impact</b>. From building low-cost{" "}
+  <b>EEG diagnostic systems</b> to creating{" "}
+  <b>real-time acoustic sensing platforms</b>, I design technology that listens,
+  learns, and helps people.
+  <br />
+  <br />
+  I’m currently dual-enrolled at{" "}
+  <b className="blue">Georgia Tech</b>, exploring{" "}
+  <b className="blue">linear algebra, multivariable calculus, and combinatorics</b>{" "}
+  to strengthen the math behind my research.
+  <br />
+  <br />
+  You'll often find me{" "}
+  <b>open-sourcing tools</b>,{" "}
+  <b>teaching AI workshops through HYPE</b>, or{" "}
+  <b>collaborating on projects that turn data into discovery</b>.
+</p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

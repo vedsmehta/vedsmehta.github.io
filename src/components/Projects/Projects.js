@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import aimiStanford from "../../Assets/Projects/aimi_stanford.png";
 import colonoscopyNet from "../../Assets/Projects/colonoscopy_net.png";
-import bioInvention from "../../Assets/Projects/bio_invention.png";
+import bioInvention from "../../Assets/Projects/biomed_invention.png";
 import emotionMse from "../../Assets/Projects/emotion_mse.png";
 import fbla from "../../Assets/Projects/fbla.png";
 import pinns from "../../Assets/Projects/pinns.png";
