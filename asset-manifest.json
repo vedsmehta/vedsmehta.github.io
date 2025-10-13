@@ -1,13 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.c58fe67c.css",
-    "main.js": "/static/js/main.f7fd1ba8.js",
+    "main.js": "/static/js/main.28480e39.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/sadd.png": "/static/media/sadd.eaa2d109715c8a8e7edb.png",
+    "static/media/media_recog.png": "/static/media/media_recog.10f8ddf1cb1a53b5f9e9.png",
+    "static/media/biomed_invention.png": "/static/media/biomed_invention.786e7c6b5c0158ce8904.png",
+    "static/media/gsefd.jpg": "/static/media/gsefd.7d4b94abd7be144e7016.jpg",
+    "static/media/gis.png": "/static/media/gis.b56a5eedc0b1a687770c.png",
     "static/media/aimi_stanford.png": "/static/media/aimi_stanford.8750401bc47681b62f8b.png",
     "static/media/emotion_mse.png": "/static/media/emotion_mse.9e0bb573cb92be0125a8.png",
     "static/media/skimlit_pubmet.png": "/static/media/skimlit_pubmet.908a43b8ad87b1fb5a6d.png",
+    "static/media/biotreks.png": "/static/media/biotreks.041c1c38c1f5e3cdcc59.png",
     "static/media/pytuner.png": "/static/media/pytuner.a430c0f9403cf7567c4b.png",
+    "static/media/inbc.png": "/static/media/inbc.620930602e3aae29940c.png",
     "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.a4ee268369aa5272423e.png",
     "static/media/fbla.png": "/static/media/fbla.ec9acc0ea48ee0c0faa6.png",
@@ -20,12 +27,12 @@
     "static/media/pre.svg": "/static/media/pre.aa57fdabe68fc46372c8.svg",
     "index.html": "/index.html",
     "main.c58fe67c.css.map": "/static/css/main.c58fe67c.css.map",
-    "main.f7fd1ba8.js.map": "/static/js/main.f7fd1ba8.js.map",
+    "main.28480e39.js.map": "/static/js/main.28480e39.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c58fe67c.css",
-    "static/js/main.f7fd1ba8.js"
+    "static/js/main.28480e39.js"
   ]
 }
