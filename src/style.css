@@ -58,7 +58,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #050a13;
 }
 
 /* Handle */
@@ -77,9 +77,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #050a13 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(5, 14, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -145,7 +145,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #181e27 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -403,7 +403,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(4, 13, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
