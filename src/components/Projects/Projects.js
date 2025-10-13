@@ -5,13 +5,19 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import aimiStanford from "../../Assets/Projects/aimi_stanford.png";
 import colonoscopyNet from "../../Assets/Projects/colonoscopy_net.png";
-// import colonoscopyPreds from "../../Assets/Projects/colonoscopy_preds.png";
+import bioInvention from "../../Assets/Projects/bio_invention.png";
 import emotionMse from "../../Assets/Projects/emotion_mse.png";
 import fbla from "../../Assets/Projects/fbla.png";
 import pinns from "../../Assets/Projects/pinns.png";
 import pytuner from "../../Assets/Projects/pytuner.png";
 import skimlitPubmet from "../../Assets/Projects/skimlit_pubmet.png";
 import vit from "../../Assets/Projects/vit.png";
+import media_recognition from "../../Assets/Projects/media_recog.png";
+import eeg_tool from "../../Assets/Projects/gsefd.jpg";
+import gis from "../../Assets/Projects/gis.png";
+import inbc from "../../Assets/Projects/inbc.png";
+import sadd from "../../Assets/Projects/sadd.png";
+import biotreks from "../../Assets/Projects/biotreks.png";
 
 function Projects() {
   // Project 
@@ -87,7 +93,7 @@ function Projects() {
     moreInfo: "Hybrid AI pipeline (NLP+Vision) for medical image labeling."
   },
   {
-    imgPath: fbla,
+    imgPath: eeg_tool, // TODO
     title: "Low-Cost Neurological Diagnosis",
     description:
       "Engineered a portable EEG device with on-board ML to classify neurological conditions. Patent pending. Presented findings at MIT and IEEE, highlighting accessibility in neurological diagnostics.",
@@ -107,7 +113,7 @@ function Projects() {
     moreInfo: "Physics-informed neural nets for biomedical simulations."
   },
   {
-    imgPath: aimiStanford,
+    imgPath: gis, // TODO
     title: "SilicoSensor (Genes in Space Finalist)",
     description:
       "National finalist in Genes in Space 2024. Designed a DNA-based fluorescent biosensor to detect silicone contaminants aboard spacecraft. Presented at the ISS Research & Development Conference in Boston.",
@@ -117,7 +123,7 @@ function Projects() {
     moreInfo: "One of five national finalist teams out of 675+ submissions."
   },
   {
-    imgPath: aimiStanford,
+    imgPath: biotreks, // TODO
     title: "Transgenic Biopesticide (BioTreks Publication)",
     description:
       "Published in BioTreks 2023. Proposed engineering broccoli plants to express Bt toxin genes as a built-in biopesticide, aiming to reduce crop losses from diamondback moth infestations.",
@@ -127,17 +133,7 @@ function Projects() {
     moreInfo: "Synthetic biology solution for pest-resistant agriculture."
   },
   {
-    imgPath: aimiStanford,
-    title: "Genes in Space 2024 National Finalist",
-    description:
-      "Selected as one of five national finalists out of 675+ teams for a synthetic biology experiment proposal. Research could be conducted aboard the ISS.",
-    links: [
-      { label: "Announcement", url: "https://www.genesinspace.org/news/blog/genes-in-space-selects-winning-student-designed-experiment-bound-for-the-international-space-station/" }
-    ],
-    moreInfo: "Presented research at ISS Research & Development Conference in Boston."
-  },
-  {
-    imgPath: aimiStanford,
+    imgPath: sadd, // TODO
     title: "National Student Leadership Council (SADD)",
     description:
       "Served on the National Student Leadership Council for Students Against Destructive Decisions. Advocated for youth health, safety, and decision-making at a national scale.",
@@ -147,7 +143,7 @@ function Projects() {
     moreInfo: "National youth leadership role promoting safe, healthy lifestyles."
   },
   {
-    imgPath: aimiStanford,
+    imgPath: inbc, // TODO
     title: "International Conference Speaker (Neurology & Brain Disorders 2025)",
     description:
       "Invited speaker at the 12th International Neurology and Brain Disorders Conference. Presented work on EEG-based BCIs for emotional regulation to an international audience.",
@@ -157,17 +153,17 @@ function Projects() {
     moreInfo: "Delivered a live technical talk in Orlando to global experts."
   },
   {
-    imgPath: aimiStanford,
+    imgPath: bioInvention,
     title: "Patent-Pending Biomedical Invention",
     description:
       "Inventor of a biomedical device for neurological applications, currently under patent review. Integrates affordable hardware and AI for accessible diagnostics.",
     links: [
-      { label: "Patent", url: "#" }
+      { label: "Product", url: "https://vedsmehta.wixstudio.com/auctus-site" }
     ],
     moreInfo: "Patent filed based on EEG research and device design."
   },
   {
-    imgPath: aimiStanford,
+    imgPath: media_recognition,
     title: "Media Recognition & Public Outreach",
     description:
       "Featured in Forsyth County News and other outlets for achievements in synthetic biology and research competitions. Recognized as a young scientist making national impact.",
