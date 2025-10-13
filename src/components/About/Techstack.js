@@ -13,15 +13,14 @@ import {
   SiTensorflow,
   SiNumpy,
   SiPandas,
-  SiMatplotlib,
   SiScikitlearn,
-  SiOpencv,
+  SiPlotly,
+  SiScipy,
+  SiR,
   SiStreamlit,
+  SiOpencv,
   SiNextdotjs,
   SiFirebase,
-  SiR,
-  SiMatlab,
-  SiPlotly,
 } from "react-icons/si";
 
 function Techstack() {
@@ -49,10 +48,7 @@ function Techstack() {
         <SiPandas />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMatplotlib />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPlotly />
+        <SiPlotly /> {/* Represents Matplotlib */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiScikitlearn />
@@ -64,6 +60,9 @@ function Techstack() {
         <SiTensorflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiScipy /> {/* Represents MATLAB */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiOpencv />
       </Col>
 
@@ -72,10 +71,7 @@ function Techstack() {
         <SiStreamlit />
       </Col>
 
-      {/* Scientific & Statistical */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMatlab />
-      </Col>
+      {/* Statistical / Scientific */}
       <Col xs={4} md={2} className="tech-icons">
         <SiR />
       </Col>
