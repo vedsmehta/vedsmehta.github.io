@@ -551,6 +551,13 @@ button:focus {
   color: white !important;
 }
 
+.tech-icons p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
