@@ -26,7 +26,7 @@ function Toolstack() {
       {tools.map((tool, index) => (
         <Col xs={4} md={2} className="tech-icons" key={index}>
           {tool.icon}
-          <p style={{ marginTop: "10px", fontSize: "1.1em", fontWeight: 500 }}>
+          <p style={{ marginTop: "10px", fontSize: ".5em", fontWeight: 500 }}>
             {tool.name}
           </p>
         </Col>
