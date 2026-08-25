@@ -1,0 +1,27 @@
+<div class="container-wide">
+  <h1>Projects</h1>
+  <p class="section-subtitle">Research and engineering work, mostly at the intersection of machine learning and things that matter.</p>
+
+  {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+  {% assign earlier = site.projects | where_exp: "p", "p.featured != true" | sort: "order" %}
+
+  <div class="project-grid">
+    {% for project in featured %}
+      {% include projects/card.html project=project %}
+    {% endfor %}
+  </div>
+
+  {% if earlier.size > 0 %}
+    <h2 class="section-title">Earlier work</h2>
+    <ul class="earlier-work">
+      {% for project in earlier %}
+        <li class="earlier-work__item">
+          <a class="earlier-work__link" href="{{ project.url | relative_url }}">
+            <span>{{ project.name }}</span>
+            <span class="earlier-work__meta">{{ project.tools | join: ", " }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

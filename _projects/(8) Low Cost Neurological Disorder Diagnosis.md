@@ -1,8 +1,10 @@
 ---
-name: Frugual Neurodiagnostic Device
+name: Frugal Neurodiagnostic Device
 tools: [Python, PyTorch, NumPy, Matplotlib, MATLAB, EEGLAB, KiCAD, Autodesk Fusion]
 image: https://i.imgur.com/jwaLziA.png
 description: After working with EEG data for a year, I realized it was something I really liked and was passionate about, so I continued to pursue it in this research project.
+featured: true
+order: 4
 ---
 # A Novel, Low-Cost Device for Diagnosing Neurological Disorders
 

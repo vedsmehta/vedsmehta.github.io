@@ -1,0 +1,344 @@
+// Hero -----------------------------------------------------------------
+
+.hero {
+  padding: 4rem 0 3rem;
+}
+
+.hero__eyebrow {
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.hero__title {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__tagline {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 38rem;
+  margin-bottom: 1.8rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 640px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+// Buttons ----------------------------------------------------------------
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.6em 1.1em;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  opacity: 0.9;
+}
+
+.btn--secondary {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.btn--secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+// Social icons -------------------------------------------------------------
+
+.social-icons {
+  display: flex;
+  gap: 0.9rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.social-icons svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+}
+
+// Skills / progress bars ---------------------------------------------------
+
+.skills {
+  margin-bottom: 2rem;
+}
+
+.skills h3 {
+  margin-bottom: 1rem;
+}
+
+.skill {
+  margin-bottom: 0.9rem;
+}
+
+.skill__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-muted);
+}
+
+.skill__track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.skill__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--bar-info);
+}
+
+.skill__fill--danger { background: var(--bar-danger); }
+.skill__fill--secondary { background: var(--bar-secondary); }
+.skill__fill--info { background: var(--bar-info); }
+.skill__fill--success { background: var(--bar-success); }
+
+.skills-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+// Timeline -----------------------------------------------------------------
+
+.timeline {
+  margin: 1rem 0 2.5rem;
+}
+
+.timeline__era {
+  margin-bottom: 2.2rem;
+}
+
+.timeline__era-label {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.9rem;
+}
+
+.timeline__item {
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--border);
+  padding-bottom: 1.4rem;
+  position: relative;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0.35em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline__dates {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+.timeline__title {
+  font-weight: 700;
+  margin: 0.15em 0 0.35em;
+}
+
+.timeline__description {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+}
+
+// Project cards --------------------------------------------------------------
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.project-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-alt);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.project-card__image {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  background: var(--code-bg);
+}
+
+.project-card__body {
+  padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.project-card__title {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-card__description {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 0.8rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  background: var(--code-bg);
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
+
+.earlier-work {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.earlier-work__item {
+  border-bottom: 1px solid var(--border);
+}
+
+.earlier-work__link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0.1rem;
+  color: var(--text);
+}
+
+.earlier-work__link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.earlier-work__meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+// Project detail page ---------------------------------------------------------
+
+.project-header {
+  margin-bottom: 1.8rem;
+}
+
+.project-header__back {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.project-header img {
+  margin-bottom: 1.6rem;
+}
+
+// Section headings on the about/projects pages ---------------------------------
+
+.section-title {
+  margin-top: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}

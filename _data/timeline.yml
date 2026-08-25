@@ -1,4 +1,48 @@
-- title: Student, Lambert High School
+# era: stanford | highschool
+
+- title: "Founder, Vigil"
+  from: 2026
+  # PLACEHOLDER: confirm end date / "Present"
+  to: Present
+  era: stanford
+  # PLACEHOLDER: confirm exact founding date, funding figure, and a one-line mission statement
+  description: >
+    Founded Vigil, an AI safety-focused company [add one-line mission and funding detail here].
+
+- title: "B.S. Computer Science (AI track), Stanford University"
+  from: 2026
+  to: "2030 (expected)"
+  era: stanford
+  # PLACEHOLDER: confirm exact coterm framing/timeline you want to state publicly
+  description: >
+    Studying Computer Science with a focus on Artificial Intelligence, pursuing a
+    CS + Mathematics co-terminal master's. Interested in AI safety research and building
+    tools that make advanced AI systems more trustworthy.
+
+- title: "Summer Research Intern, Stanford AIMI Center"
+  from: 2024
+  to: 2024
+  era: highschool
+  description: >
+    Spent a summer at Stanford's Artificial Intelligence for Medical Imaging Center
+    building a multi-label chest radiograph classifier (F1 0.69, AUROC 0.86 on CheXpert)
+    with RadGraph-based report parsing and GradCAM interpretability.
+
+- title: "Published Researcher, IEEE BIBE"
+  from: 2023
+  to: 2023
+  era: highschool
+  description: >
+    Presented "Towards Real-time Polyp Segmentation during Colonoscopy using an
+    EfficientNet-based UNet Architecture" at an MIT research conference, later published
+    and presented at IEEE BIBE 2023.
+
+- title: "Student, Lambert High School"
   from: 2022
-  to: 2026 (expected)
-  description: Throughout my high school career, I've been on a quest for knowledge and leadership opportunities. I've eagerly embraced the challenges of multiple Advanced Placement courses, pushing myself to excel in a variety of academic disciplines. Not only have I been a dedicated student, but I've also actively contributed to the school community. As an officer in the Future Business Leaders of America (FBLA), I've honed my leadership skills and participated in meaningful initiatives within the organization.  Moreover, I've had the honor of serving as the President of Students Against Destructive Decisions (SADD), where I've strived to make a positive impact by promoting responsible choices and safety among my peers. My high school journey has been a blend of academic excellence and dedicated leadership, and I look forward to continuing this trajectory in the future.
+  to: "2026 (expected)"
+  era: highschool
+  description: >
+    Pursued a full load of Advanced Placement coursework alongside independent research in
+    medical imaging and brain-computer interfaces. Served as an officer in Future Business
+    Leaders of America (FBLA) and as President of Students Against Destructive Decisions
+    (SADD).

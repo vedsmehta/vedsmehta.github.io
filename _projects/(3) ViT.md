@@ -4,6 +4,8 @@ tools: [Python, TensorFlow
 ]
 image:  https://i.imgur.com/gJ2wiDc.png
 description: My TensorFlow recreation of groundbreaking research that has revolutionized the computer vision landscape
+featured: true
+order: 5
 ---
 
 # ViT (Vision Transformer)

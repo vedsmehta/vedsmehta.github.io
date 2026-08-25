@@ -1,12 +1,9 @@
-# Get Icons  from : https://fontawesome.com/icons
-# Get Colors from : https://brandcolors.net/
-
-
 email:
-  url   : "mailto:"
-  icon  : fas fa-envelope
-  color : db4437
+  url   : "mailto:veds.mehta@gmail.com"
+  icon  : email
 github:
-  url   : https://www.github.com/
-  icon  : fab fa-github
-  color : 333333
+  url   : "https://github.com/vedsmehta"
+  icon  : github
+linkedin:
+  url   : "https://linkedin.com/in/vedsmehta"
+  icon  : linkedin

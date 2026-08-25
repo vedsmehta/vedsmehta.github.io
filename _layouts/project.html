@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="project-header">
+    <a class="project-header__back" href="{{ '/projects/' | relative_url }}">&larr; All projects</a>
+    <h1>{{ page.name }}</h1>
+    <ul class="tag-list">
+      {% for tool in page.tools %}
+        <li class="tag">{{ tool }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {{ content }}
+</div>

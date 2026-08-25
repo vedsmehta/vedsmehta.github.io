@@ -7,20 +7,29 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Welcome to my corner of the digital world! I'm a 15-year-old aspiring computer scientist with big dreams and an even bigger passion for technology. My journey into the fascinating realm of computer science began at a young age, and I'm determined to make a positive impact on the world through my work.
+Hi, I'm **{{ site.author.name }}** :wave:,<br>
+I'm a Computer Science student at Stanford University (Class of 2030), pursuing a
+CS + Mathematics co-terminal master's with a focus on Artificial Intelligence. I'm the
+founder of **Vigil**, an AI safety-focused company.
+<!-- PLACEHOLDER: swap in a real one-line Vigil mission statement and founding detail here -->
+[one to two sentences on what Vigil does and why].
 
-As a budding researcher, I'm driven by the desire to address some of the most pressing societal issues we face today. While I may be young, my commitment to driving positive change knows no bounds. I'm currently engaged in independent academic research, constantly exploring new horizons and pushing the boundaries of what technology can achieve.
+Before Stanford, I spent my high school years doing independent research at the
+intersection of machine learning and medicine: building models to segment polyps during
+colonoscopy (published and presented at IEEE BIBE 2023), classifying chest radiographs for
+lung disease detection during a summer at Stanford's AIMI Center, and using EEG data to
+help people with neurological disorders manage their emotions. Outside of research, I was
+an officer in Future Business Leaders of America (FBLA) and President of Students Against
+Destructive Decisions (SADD) at Lambert High School.
 
-But I'm not on this journey alone. Collaboration is at the heart of innovation, and I firmly believe in the power of teamwork. I actively engage with others to contribute to my community and make a tangible difference in the lives of those around me.
+These days, that same interest in using technology for real, structural good has carried
+over into my focus on AI safety — making sure the systems we're building at Stanford and
+through Vigil stay trustworthy as they get more capable.
 
-Join me on this exciting adventure as I work tirelessly to shape the future through the world of computer science. Together, we can harness the power of technology to address the challenges that impact our global community.
-
-<div class="row">
+<div class="skills-row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
-<div class="row">
+<h2 class="section-title">Timeline</h2>
 {% include about/timeline.html %}
-</div>

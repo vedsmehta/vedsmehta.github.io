@@ -6,8 +6,7 @@ description: >
   make websites.
 baseurl: ""  # Leave empty if hosted at <your-username>.github.io
 repository: "vedsmehta/vedsmehta.github.io"
-remote_theme: "YoussefRaafatNasry/portfolYOU"
-open_new_tab: false  # Opens external URLs in new tab for posts/projects/navbar
+open_new_tab: false  # Opens external URLs in new tab for project links
 
 
 ### Plugins ###
@@ -17,7 +16,6 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude:
-  - pages/tags.html
   - pages/404.html
   - pages/index.md
 
@@ -28,11 +26,7 @@ author:
   image: "https://i.ibb.co/93d22TXj/IMG-4352-2.jpg"
   email: "veds.mehta@gmail.com"
   github: "vedsmehta"
-  instagram: "@vedsmehta"
-
-
-### Posts ###
-permalink: /blog/:title
+  linkedin: "vedsmehta"
 
 
 ### Collections ###
@@ -42,45 +36,17 @@ collections:
     permalink: /projects/:name
 
 
-### Disqus ###
-disqus:
-  shortname: ""  # Replace with your actual Disqus shortname if using
-
-
-### Analytics ###
-analytics:
-  enabled: false
-  google:
-    tracking_id: ""  # Replace with actual ID if using
-
-
-### Buy me a coffee ###
-buymeacoffee:
-  enabled: false
-  username: ""
-  color: "#007bff"
-  message: "Thank you for visiting."
-  description: "Support me on Buy me a coffee!"
-
-
 ### Defaults for collections ###
 defaults:
   - scope:
       path: ""
       type: "projects"
     values:
-      layout: "page"
-
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false
+      layout: "project"
 
 
 ### Exclude from processing ###
 exclude:
   - README.md
-  - CONTRIBUTING.md
   - LICENSE
   - "*.log"

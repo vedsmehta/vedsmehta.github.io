@@ -3,6 +3,8 @@ name: PyTuner
 tools: [Python, Tkinter, NumPy, Sounddevice]
 image: https://i.imgur.com/Q6bznjN.png
 description: PyTuner is a MacOS-based guitar tuning application coded fully in Python. Being my first project, I learned alot about software development and proper coding practices.
+featured: false
+order: 3
 ---
 # The PyTuner Project
 

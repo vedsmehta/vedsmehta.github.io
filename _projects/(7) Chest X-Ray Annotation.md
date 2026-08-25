@@ -3,6 +3,8 @@ name: Multilabel Classification for Lung Disease Detection
 tools: [Python, PyTorch, NumPy, Matplotlib, GradCAM, RadGraph]
 image: https://i.imgur.com/j2zaXGo.png
 description: A project I completed as part of a summer research experience at Stanford University's Artificial Intelligence for Medical Imaging Center in 2024.
+featured: true
+order: 1
 ---
 # NLP-Vision Based Multi-Label Classification for Lung Disease
 
@@ -12,5 +14,3 @@ description: A project I completed as part of a summer research experience at St
 We also explored model interpretability, through the use of Gradient Class Activation Maps, or GradCAM. GradCam makes “visual explanations" for decisions from a large class of CNN-based models, making them more transparent.
 
 ![grad](https://i.imgur.com/j2zaXGo.png)
-
-**THIS PAGE IS IN THE PROCESS OF BEING UPDATED**

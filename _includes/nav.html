@@ -1,0 +1,15 @@
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <ul class="site-nav__links">
+      {% assign sorted_pages = site.pages | sort: "weight" %}
+      {% for p in sorted_pages %}
+        {% unless site.nav_exclude contains p.path %}
+          {% if p.title %}
+            <li><a href="{{ p.url | relative_url }}"{% if page.url == p.url %} class="is-active"{% endif %}>{{ p.title }}</a></li>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

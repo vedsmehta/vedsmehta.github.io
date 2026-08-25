@@ -3,6 +3,8 @@ name: FBLA Chapter Management
 tools: [JavaScript, React, Firebase]
 image: https://i.imgur.com/6ml4RqC.png
 description: I built a website using ReactJS for our local FBLA chapter for managing competitive event signups, members, and events.
+featured: false
+order: 2
 ---
 
 # FBLA Chapter Management Platform

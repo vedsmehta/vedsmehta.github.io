@@ -1,0 +1,30 @@
+<div class="timeline">
+  {% assign stanford = site.data.timeline | where: "era", "stanford" %}
+  {% assign highschool = site.data.timeline | where: "era", "highschool" %}
+
+  {% if stanford.size > 0 %}
+    <div class="timeline__era">
+      <p class="timeline__era-label">Stanford &amp; Vigil</p>
+      {% for item in stanford %}
+        <div class="timeline__item">
+          <div class="timeline__dates">{{ item.from }}&ndash;{{ item.to }}</div>
+          <div class="timeline__title">{{ item.title }}</div>
+          <p class="timeline__description">{{ item.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if highschool.size > 0 %}
+    <div class="timeline__era">
+      <p class="timeline__era-label">High School &amp; Early Research</p>
+      {% for item in highschool %}
+        <div class="timeline__item">
+          <div class="timeline__dates">{{ item.from }}&ndash;{{ item.to }}</div>
+          <div class="timeline__title">{{ item.title }}</div>
+          <p class="timeline__description">{{ item.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,12 @@
+<a class="project-card" href="{{ include.project.url | relative_url }}">
+  <img class="project-card__image" src="{{ include.project.image }}" alt="{{ include.project.name }}" loading="lazy">
+  <div class="project-card__body">
+    <div class="project-card__title">{{ include.project.name }}</div>
+    <p class="project-card__description">{{ include.project.description }}</p>
+    <ul class="tag-list">
+      {% for tool in include.project.tools %}
+        <li class="tag">{{ tool }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</a>

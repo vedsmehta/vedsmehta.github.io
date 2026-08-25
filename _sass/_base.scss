@@ -1,0 +1,127 @@
+// Reset + typography + color tokens
+
+:root {
+  --bg: #fafafa;
+  --bg-alt: #ffffff;
+  --text: #16181d;
+  --text-muted: #5b6270;
+  --border: #e3e5e9;
+  --accent: #2557d6;
+  --accent-soft: #e8edfc;
+  --code-bg: #f0f1f4;
+
+  --bar-danger: #d6455a;
+  --bar-secondary: #6a7280;
+  --bar-info: #2557d6;
+  --bar-success: #1f8a5f;
+
+  --shadow: 0 1px 2px rgba(16, 18, 22, 0.06), 0 4px 16px rgba(16, 18, 22, 0.04);
+  --radius: 10px;
+  --max-width: 46rem;
+  --max-width-wide: 64rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0f13;
+    --bg-alt: #14171c;
+    --text: #edeef0;
+    --text-muted: #9aa1ad;
+    --border: #262a32;
+    --accent: #7fa4ff;
+    --accent-soft: #1a2440;
+    --code-bg: #191c22;
+
+    --bar-danger: #e5697c;
+    --bar-secondary: #8a919d;
+    --bar-info: #7fa4ff;
+    --bar-success: #4bb787;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 0.6em;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: 1.3em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.2em 1em;
+  border-left: 3px solid var(--border);
+  color: var(--text-muted);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  background: var(--code-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 5px;
+  font-size: 0.88em;
+}
+
+pre {
+  background: var(--code-bg);
+  border-radius: var(--radius);
+  padding: 1em;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5em 0;
+}
