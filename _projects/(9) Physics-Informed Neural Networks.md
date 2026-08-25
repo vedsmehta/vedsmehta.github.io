@@ -5,6 +5,7 @@ image: https://i.imgur.com/GJTM8cZ.png
 description: Under the mentorship of Postdoctoral Researcher Dr. Pankaj Rohilla, I carried out a project involving Physics-Informed Neural Networks
 featured: true
 order: 6
+slug: pinn
 ---
 # Physics-Informed Neural Networks
 

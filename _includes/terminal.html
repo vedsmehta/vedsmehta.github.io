@@ -1,0 +1,52 @@
+<div class="term">
+  <div class="term__header">
+    <div class="term__name">{{ site.author.name }}</div>
+    <div class="term__tagline">{{ site.description | strip_newlines | strip }}</div>
+  </div>
+  <div class="term__hint">{{ site.data.terminal.hint }}</div>
+  <div class="term__body" id="term-body">
+    <div class="term__output" id="term-output"></div>
+    <div class="term__line">
+      <label class="term__prompt" for="term-input" id="term-prompt">~ $</label>
+      <input
+        class="term__input"
+        id="term-input"
+        type="text"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-label="Terminal command input"
+      >
+    </div>
+  </div>
+</div>
+
+{% assign featured = site.projects | where: "featured", true | sort: "order" %}
+{% capture links_txt %}{% for entry in site.data.social-media %}{{ entry[0] }}: {{ entry[1].url }}
+{% endfor %}{% endcapture %}
+
+<script type="application/json" id="term-fs">
+{
+  "about.txt": {{ site.data.terminal.about_text | strip_newlines | strip | jsonify }},
+  "whoami.txt": {{ site.data.terminal.whoami_text | strip_newlines | strip | jsonify }},
+  "links.txt": {{ links_txt | strip | jsonify }},
+  "projects": {
+    {% for p in featured %}"{{ p.slug | default: p.name | slugify }}.txt": {{ p.description | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }
+}
+</script>
+
+<script type="application/json" id="term-open">
+{
+  "github": {{ site.data.social-media.github.url | jsonify }},
+  "linkedin": {{ site.data.social-media.linkedin.url | jsonify }},
+  "email": {{ site.data.social-media.email.url | jsonify }},
+  "about": {{ '/about/' | relative_url | jsonify }},
+  "projects": {{ '/projects/' | relative_url | jsonify }}{% if featured.size > 0 %},{% endif %}
+  {% for p in featured %}"{{ p.slug | default: p.name | slugify }}": {{ p.url | relative_url | jsonify }}{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}
+</script>
+
+<script src="{{ '/assets/js/terminal.js' | relative_url }}"></script>

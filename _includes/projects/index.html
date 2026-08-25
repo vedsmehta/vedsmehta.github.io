@@ -1,15 +1,15 @@
-<div class="container-wide">
+<div class="container">
   <h1>Projects</h1>
   <p class="section-subtitle">Research and engineering work, mostly at the intersection of machine learning and things that matter.</p>
 
   {% assign featured = site.projects | where: "featured", true | sort: "order" %}
   {% assign earlier = site.projects | where_exp: "p", "p.featured != true" | sort: "order" %}
 
-  <div class="project-grid">
+  <ul class="project-list">
     {% for project in featured %}
       {% include projects/card.html project=project %}
     {% endfor %}
-  </div>
+  </ul>
 
   {% if earlier.size > 0 %}
     <h2 class="section-title">Earlier work</h2>

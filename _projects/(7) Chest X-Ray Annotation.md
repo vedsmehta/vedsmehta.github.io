@@ -5,6 +5,7 @@ image: https://i.imgur.com/j2zaXGo.png
 description: A project I completed as part of a summer research experience at Stanford University's Artificial Intelligence for Medical Imaging Center in 2024.
 featured: true
 order: 1
+slug: chexpert
 ---
 # NLP-Vision Based Multi-Label Classification for Lung Disease
 

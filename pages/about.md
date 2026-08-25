@@ -7,7 +7,7 @@ weight: 3
 
 # **About Me**
 
-Hi, I'm **{{ site.author.name }}** :wave:,<br>
+Hi, I'm **{{ site.author.name }}**.
 I'm a Computer Science student at Stanford University (Class of 2030), pursuing a
 CS + Mathematics co-terminal master's with a focus on Artificial Intelligence. I'm the
 founder of **Vigil**, an AI safety-focused company.

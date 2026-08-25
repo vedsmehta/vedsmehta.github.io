@@ -13,9 +13,6 @@
 .site-nav {
   border-bottom: 1px solid var(--border);
   background: var(--bg);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .site-nav__inner {
@@ -30,19 +27,18 @@
 
 .site-nav__brand {
   font-weight: 700;
-  color: var(--text);
-  font-size: 1rem;
+  color: var(--accent-cyan);
+  font-size: 0.95rem;
   white-space: nowrap;
 }
 
 .site-nav__brand:hover {
   text-decoration: none;
-  color: var(--accent);
 }
 
 .site-nav__links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -51,12 +47,22 @@
 
 .site-nav__links a {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+}
+
+.site-nav__links a::before {
+  content: "[";
+  color: var(--border);
+}
+
+.site-nav__links a::after {
+  content: "]";
+  color: var(--border);
 }
 
 .site-nav__links a:hover,
 .site-nav__links a.is-active {
-  color: var(--text);
+  color: var(--accent-cyan);
   text-decoration: none;
 }
 
@@ -68,7 +74,7 @@ main {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .site-footer__inner {
@@ -90,6 +96,6 @@ main {
   }
 
   .site-nav__links {
-    gap: 1.1rem;
+    gap: 1rem;
   }
 }

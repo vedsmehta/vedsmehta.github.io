@@ -5,6 +5,7 @@ image: https://i.imgur.com/RWd7KHs.png
 description: This project was my second scientific research project, in which I used various data processing techniques and artificial intelligence methods to help people impacted by neurological disorders manage their emotions; a major symptom associated with any disorder.
 featured: true
 order: 3
+slug: bci
 ---
 # Brain-Computer Interfaces for Emotional Regulation of People with Neurological Disorders
 

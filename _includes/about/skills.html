@@ -1,14 +1,9 @@
 <div class="skills">
   <h3>{{ include.title }}</h3>
-  {% for skill in include.source %}
-    <div class="skill">
-      <div class="skill__label">
-        <span>{{ skill.name }}</span>
-        <span>{{ skill.percentage }}%</span>
-      </div>
-      <div class="skill__track">
-        <div class="skill__fill skill__fill--{{ skill.color }}" style="width: {{ skill.percentage }}%;"></div>
-      </div>
-    </div>
-  {% endfor %}
+  <pre>{% for skill in include.source -%}
+{%- assign filled = skill.percentage | divided_by: 10 -%}
+{%- assign unfilled = 10 | minus: filled -%}
+{%- assign pad_len = 14 | minus: skill.name.size -%}
+{{ skill.name }}{% if pad_len > 0 %}{% for i in (1..pad_len) %}{{ " " }}{% endfor %}{% endif %} <span class="bar-track">[</span><span class="bar-fill">{% for i in (1..filled) %}={% endfor %}</span><span class="bar-track">{% for i in (1..unfilled) %}-{% endfor %}]</span> <span class="bar-pct">{{ skill.percentage }}%</span>
+{% endfor -%}</pre>
 </div>

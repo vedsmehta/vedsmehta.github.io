@@ -1,0 +1,11 @@
+hint: 'Type "help" for available commands. Try: ls, cat about.txt, open github'
+
+about_text: >
+  Vedant Mehta. CS + Math co-term @ Stanford (Class of 2030), AI track.
+  Founder of Vigil, an AI safety-focused company.
+  Previously: independent research in medical imaging and brain-computer
+  interfaces, published at IEEE BIBE 2023, presented at Stanford AIMI and MIT.
+
+whoami_text: >
+  vedant -- builder, researcher, occasional website-maker.
+  Interested in making AI systems more trustworthy as they get more capable.
