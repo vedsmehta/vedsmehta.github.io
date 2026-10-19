@@ -1,0 +1,60 @@
+---
+layout: page
+title: Bookings
+permalink: /bookings/
+weight: 2
+---
+
+# **Book Time With Me**
+
+Pick a time below and it'll land straight on my calendar.
+
+<!--
+  Swap YOUR_CAL_USERNAME for your real Cal.com username once you've signed up
+  at https://cal.com. You can also point this at a specific event type, e.g.
+  "YOUR_CAL_USERNAME/intro-call" instead of just the username.
+-->
+<div id="cal-booking" style="width:100%;min-height:700px;overflow:scroll"></div>
+
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", { origin: "https://cal.com" });
+
+  Cal("inline", {
+    elementOrSelector: "#cal-booking",
+    calLink: "YOUR_CAL_USERNAME",
+    config: { theme: "light" }
+  });
+
+  Cal("ui", {
+    styles: { branding: { brandColor: "#000000" } },
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>
