@@ -1,23 +1,22 @@
 # era: stanford | highschool
 
-- title: "Founder, Vigil"
-  from: 2026
-  # PLACEHOLDER: confirm end date / "Present"
-  to: Present
+- title: "Co-Founder & Lead Engineer, VIGIL Health"
+  from: 2025
+  to: 2026
   era: stanford
-  # PLACEHOLDER: confirm exact founding date, funding figure, and a one-line mission statement
   description: >
-    Founded Vigil, an AI safety-focused company [add one-line mission and funding detail here].
+    Co-founded VIGIL and engineered its EEG wearable headband platform end to end —
+    PCB, embedded firmware, BLE telemetry, on-device ML, and dashboard — at $46/unit
+    against a $5,000-$15,000 industry standard. Raised $500K and ran clinical pilots
+    at Emory and Augusta University. Not an active day-to-day commitment anymore.
 
-- title: "B.S. Computer Science (AI track), Stanford University"
+- title: "Math &amp; Philosophy, CS coterm, Stanford University"
   from: 2026
   to: "2030 (expected)"
   era: stanford
-  # PLACEHOLDER: confirm exact coterm framing/timeline you want to state publicly
   description: >
-    Studying Computer Science with a focus on Artificial Intelligence, pursuing a
-    CS + Mathematics co-terminal master's. Interested in AI safety research and building
-    tools that make advanced AI systems more trustworthy.
+    Studying Math and Philosophy with a Computer Science coterm, working toward
+    technical AI safety research.
 
 - title: "Summer Research Intern, Stanford AIMI Center"
   from: 2024

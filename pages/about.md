@@ -8,23 +8,24 @@ weight: 3
 # **About Me**
 
 Hi, I'm **{{ site.author.name }}**.
-I'm a Computer Science student at Stanford University (Class of 2030), pursuing a
-CS + Mathematics co-terminal master's with a focus on Artificial Intelligence. I'm the
-founder of **Vigil**, an AI safety-focused company.
-<!-- PLACEHOLDER: swap in a real one-line Vigil mission statement and founding detail here -->
-[one to two sentences on what Vigil does and why].
+I'm at Stanford (Class of 2030), studying Math and Philosophy with a CS coterm, aimed at
+technical AI safety research.
 
-Before Stanford, I spent my high school years doing independent research at the
-intersection of machine learning and medicine: building models to segment polyps during
-colonoscopy (published and presented at IEEE BIBE 2023), classifying chest radiographs for
-lung disease detection during a summer at Stanford's AIMI Center, and using EEG data to
-help people with neurological disorders manage their emotions. Outside of research, I was
-an officer in Future Business Leaders of America (FBLA) and President of Students Against
-Destructive Decisions (SADD) at Lambert High School.
+I co-founded **VIGIL Health**, where I built an ICU-grade EEG wearable headband end to
+end — PCB, embedded firmware, BLE telemetry, on-device ML, and the dashboard clinicians
+use — at $46 a unit against a $5,000 to $15,000 industry standard, now in clinical pilots
+at Emory and Augusta University. I'm not running it day to day anymore, but it's real
+track record: shipped hardware, real pilots, a real fundraise.
 
-These days, that same interest in using technology for real, structural good has carried
-over into my focus on AI safety — making sure the systems we're building at Stanford and
-through Vigil stay trustworthy as they get more capable.
+Before Stanford, I did independent research at the intersection of machine learning and
+medicine: segmenting polyps during colonoscopy (published and presented at IEEE BIBE
+2023), classifying chest radiographs for lung disease detection during a summer at
+Stanford's AIMI Center, and using EEG data to help people with neurological disorders
+manage their emotions.
+
+These days most of my attention is on AI safety: coursework and research at Stanford, and
+a public, dated record of judgment I keep on investing and safety-startup ideas — writing
+down what I believe before I find out if I was right.
 
 <div class="skills-row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
