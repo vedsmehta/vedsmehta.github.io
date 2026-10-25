@@ -1,25 +1,25 @@
 ---
 name: VIGIL Health
-tools: [PCB Design, Embedded C, BLE, TypeScript, Next.js, On-Device ML]
-description: Co-founded and built the full stack of an ICU-grade EEG wearable headband — hardware, firmware, and dashboard — at $46/unit against a $5K-$15K industry standard, now in clinical pilots at Emory and Augusta University.
+tools: [Embedded C, BLE, KiCad, TypeScript, Next.js]
+description: Technical co-founder of a low-cost vital-signs headband for hospital wards. Built the working prototype, its firmware, BLE link and dashboard, at about $46/unit against a $5K-$15K bedside monitor.
 featured: true
 order: 0
 ---
 # VIGIL Health
 
-VIGIL is a real-time clinical vitals monitoring platform built around a low-cost
-EEG headband: a $46 wearable talks over BLE to a browser-based dashboard, which
-pushes structured data into hospital EHR systems through SMART on FHIR. The goal
-is ICU-grade continuous monitoring at a fraction of the cost of existing hardware,
-which typically runs $5,000 to $15,000 per unit.
+VIGIL is a real-time vital-signs monitoring platform for hospital general wards, built
+around a low-cost headband: a $46 wearable tracks heart rate, temperature, motion and
+breathing and talks over BLE to a browser-based dashboard, built to push structured data
+into hospital EHR systems through SMART on FHIR. The goal is continuous monitoring on
+general wards at a fraction of the cost of bedside monitors, which typically run $5,000
+to $15,000 per unit.
 
-I co-founded VIGIL and engineered the stack end to end: PCB design, embedded C
-firmware, BLE telemetry, on-device ML inference, and the cloud dashboard that
-clinicians use to read vitals in real time.
+I co-founded VIGIL as its technical co-founder: I built the working prototype on a
+development board, its embedded firmware and BLE telemetry, and the dashboard clinicians
+use to read vitals, and I drafted the schematic for the custom board.
 
-The platform is currently in clinical pilots at Emory University and Augusta
-University, and raised $500K from investors after a June 2026 demo. It's not
-something I run day to day anymore, but the hardware, the pilots, and the
-fundraise are real track record, not a class project.
+VIGIL raised $500K from investors after a June 2026 demo. It's not something I run day to
+day anymore, but the prototype and the fundraise are real track record, not a class
+project.
 
 Learn more at [vigilhealth.us](https://vigilhealth.us).

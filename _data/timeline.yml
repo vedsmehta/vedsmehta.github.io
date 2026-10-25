@@ -5,17 +5,17 @@
   to: 2026
   era: stanford
   description: >
-    Co-founded VIGIL and engineered its EEG wearable headband platform end to end —
-    PCB, embedded firmware, BLE telemetry, on-device ML, and dashboard — at $46/unit
-    against a $5,000-$15,000 industry standard. Raised $500K and ran clinical pilots
-    at Emory and Augusta University. Not an active day-to-day commitment anymore.
+    Technical co-founder of VIGIL, a low-cost vital-signs headband for hospital wards.
+    Built the working prototype, its firmware, BLE telemetry and dashboard, and drafted
+    the custom board's schematic, at about $46/unit against a $5,000-$15,000 bedside
+    monitor. Raised $500K after a June 2026 demo. Not an active day-to-day commitment anymore.
 
-- title: "Math &amp; Philosophy, CS coterm, Stanford University"
+- title: "Math &amp; Philosophy, Stanford University"
   from: 2026
   to: "2030 (expected)"
   era: stanford
   description: >
-    Studying Math and Philosophy with a Computer Science coterm, working toward
+    Studying Math and Philosophy and planning a Computer Science coterm, working toward
     technical AI safety research.
 
 - title: "Summer Research Intern, Stanford AIMI Center"
