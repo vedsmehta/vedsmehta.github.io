@@ -15,7 +15,7 @@ I co-founded **VIGIL Health**, a low-cost vital-signs headband for hospital gene
 that tracks heart rate, temperature, motion and breathing, at about $46 a unit against a
 $5,000 to $15,000 bedside monitor. I was the technical co-founder: I built the working
 prototype, its firmware and BLE link, and the dashboard, and drafted the schematic for the
-custom board. We raised $500K after a June 2026 demo. I'm not running it day to day anymore.
+custom board. We raised $500K after a June 2026 demo. I'm no longer working on it.
 
 Before Stanford, I did independent research at the intersection of machine learning and
 medicine: segmenting polyps during colonoscopy (published and presented at IEEE BIBE

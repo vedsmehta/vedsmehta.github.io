@@ -18,8 +18,8 @@ I co-founded VIGIL as its technical co-founder: I built the working prototype on
 development board, its embedded firmware and BLE telemetry, and the dashboard clinicians
 use to read vitals, and I drafted the schematic for the custom board.
 
-VIGIL raised $500K from investors after a June 2026 demo. It's not something I run day to
-day anymore, but the prototype and the fundraise are real track record, not a class
+VIGIL raised $500K from investors after a June 2026 demo. I'm no longer working on
+VIGIL, but the prototype and the fundraise are real track record, not a class
 project.
 
 Learn more at [vigilhealth.us](https://vigilhealth.us).
