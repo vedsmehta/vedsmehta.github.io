@@ -34,6 +34,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+  writing:
+    output: true
+    permalink: /writing/:name
 
 
 ### Defaults for collections ###
@@ -43,6 +46,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: ""
+      type: "writing"
+    values:
+      layout: "post"
 
 
 ### Exclude from processing ###

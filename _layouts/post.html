@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="post-header">
+    <a class="post-header__back" href="{{ '/writing/' | relative_url }}">writing</a>
+    <h1>{{ page.title }}</h1>
+    <p class="post-header__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.kind %}<span class="tag">{{ page.kind }}</span>{% endif %}
+      {% if page.verdict %}<span class="tag">{{ page.verdict }}</span>{% endif %}
+    </p>
+  </div>
+
+  {{ content }}
+
+  {% if page.corrections %}
+  <div class="post-corrections">
+    <h2 class="section-title">corrections</h2>
+    <ul>
+      {% for c in page.corrections %}
+        <li><time>{{ c.date }}</time> {{ c.note }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>

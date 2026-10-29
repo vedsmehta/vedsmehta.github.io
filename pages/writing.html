@@ -1,0 +1,27 @@
+---
+layout: page
+title: Writing
+permalink: /writing/
+weight: 2
+---
+
+<p class="section-subtitle">
+  theses and investment memos. every thesis carries a kill condition, and every
+  memo says what would change my mind. nothing here gets edited quietly after
+  the fact; corrections are appended with a date.
+</p>
+
+{% assign items = site.writing | sort: "date" | reverse %}
+<ul class="post-list">
+  {% for item in items %}
+  <li class="post-list__item">
+    <a class="post-list__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    <div class="post-list__meta">
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+      {% if item.kind %}<span class="tag">{{ item.kind }}</span>{% endif %}
+      {% if item.verdict %}<span class="tag">{{ item.verdict }}</span>{% endif %}
+    </div>
+    {% if item.summary %}<p class="post-list__summary">{{ item.summary }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
